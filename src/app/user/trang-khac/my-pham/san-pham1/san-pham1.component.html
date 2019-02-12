@@ -1,0 +1,137 @@
+<br><br><br>
+<img src="https://www.vienthammykhothi.vn/public/img/banner-sanpham.jpg" class="img img-fluid" alt="Second sample avatar image">
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-7 col-md-12">
+      <h2 class="h3-responsive text-center text-uppercase font-weight-bold my-5 " style="color:#A65606">COLD PRESSED
+        ORGANIC
+      </h2>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <img src="https://vienthammykhothi.vn/upload/images/product/ab03-review-thumb.jpg?1483607863649" class=" img-fluid"
+              alt="Second sample avatar image">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+
+          <p class="font-weight-normal" style="color:#A65606">
+            Mã sản phẩm : <span class="black-text">AB03</span>
+          </p>
+          <p class="font-weight-normal" style="color:#A65606">
+            Tình trạng : <span class="black-text">Còn hàng</span>
+          </p>
+          <p class="font-weight-normal" style="color:#A65606">
+            Giá : <span class="black-text">85 USD</span>
+          </p>
+          <p class="font-weight-normal" style="color:#A65606">
+            Dung lượng : <span class="black-text">30ml</span>
+          </p>
+          <p class="font-weight-normal" style="color:#A65606">
+            Thành phần :
+          </p>
+          <ul class="font-weight-normal">
+            <li>
+              Pearl Extract chống lão hóa.
+            </li>
+            <li>
+              Phenoxyethanol kháng khuẩn.
+            </li>
+            <li>
+              Dương cam cúc làm dịu da.
+            </li>
+            <li>
+              Camomile Extract chống viêm.
+            </li>
+          </ul>
+        </div>
+        <div class="a">
+
+          <b class="font-weight-normal text-left" style="color:#A65606">Công dụng:
+            <ul class="font-weight-normal black-text">
+              <li>
+                Làm mờ vết thâm, tàn nhang.
+              </li>
+              <li>
+                Làm trắng da.
+              </li>
+              <li>
+                Giảm tình trạng ngứa và khó chịu cho da.
+              </li>
+
+            </ul>
+          </b>
+
+          <p class="font-weight-normal text-left" style="color:#A65606">
+            Hướng dẫn sử dụng : <span class="black-text">Khi thấy da khó chịu có thể xịt 1 ngày 3 - 4 lần</span>
+          </p>
+          <p class="font-weight-normal text-left" style="color:#A65606">
+            Đặc tính : <span class="black-text"> Thích hợp cho mọi loại da</span>
+          </p>
+          <p class="font-weight-normal text-left" style="color:#A65606">
+            Chú ý : <span class="black-text">Chỉ sử dụng bên ngoài da tránh tiếp xúc với mắt. Ngưng sử dụng nếu bị kích
+              ứng</span>
+          </p>
+          <p class="font-weight-normal text-left" style="color:#A65606">
+            Hạn sử dụng : <span class="black-text">3 năm</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-12">
+      <br>
+      <h3><span class="badge badge-primary">Tin mới nhất</span></h3>
+      <hr>
+      <div *ngFor="let news of listNews">
+
+        <!-- Small news -->
+        <div class="single-news mb-4">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3">
+
+              <!--Image-->
+              <div class="view overlay rounded z-depth-1 mb-4">
+                <img class="img-fluid" src="{{news.hinhAnh}}" alt="Sample image">
+                <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-9">
+
+              <!-- Excerpt -->
+              <p class="font-weight-bold dark-grey-text">{{news.ngayDang}}<img class="img-fluid" src="http://caytrongduoclieu.com/asset/image/hot.gif"
+                  alt="Sample image"></p>
+              <div class="d-flex justify-content-between">
+                <div class="col-11 text-truncate pl-0 mb-3">
+                  <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}" class="dark-grey-text">{{news.tieuDe}}</a>
+                </div>
+                <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}"> <i class="fa fa-angle-double-right fa-1x deep-orange-text"></i></a>
+              </div>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Small news -->
+        <hr>
+      </div>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=400&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="330" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+        allow="encrypted-media"></iframe>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+<div class="container wow bounceInDown" data-wow-delay="0.3s">
+  <div class="row">
+    <div class="col">
+      <img class="img-fluid" src="http://thammy.vn/wp-content/themes/diemnhan/images/line-green.png" width="100%px"
+        height="100%px" alt="Card image cap">
+
+
+      <!-- Section: Magazine v.2 -->
+      <section class="magazine-section my-5">
+
+        <!-- Section heading -->
+        <h2 class="h3-responsive text-center text-uppercase font-weight-bold my-5 " style="color:#A65606">hoạn động -
+          sự kiện
+
+        </h2>
+
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-6 col-md-12">
+
+            <!-- Featured news -->
+            <div class="single-news mb-lg-0 mb-4">
+
+              <!-- Image -->
+              <div class="view overlay rounded z-depth-1-half mb-4">
+                <img class="img-fluid" src="{{data.hinhAnh}}" alt="Sample image">
+                <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{data.id}}">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!-- Data -->
+              <div class="news-data d-flex justify-content-between">
+                <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{data.id}}" class="deep-orange-text">
+                  <h6 class="font-weight-bold">new <i class="fa fa-angle-double-right fa-1x deep-orange-text"></i> </h6>
+                </a>
+                <p class="font-weight-bold dark-grey-text">{{data.ngayDang}}<img class="img-fluid" src="http://caytrongduoclieu.com/asset/image/hot.gif" alt="Sample image"></p>
+              </div>
+
+              <!-- Excerpt -->
+              <h4 class="font-weight-bold dark-grey-text mb-3"><a> {{data.tieuDe}}</a></h4>
+              <p class="font-weight-normal mb-lg-0 mb-md-5 mb-4">{{data.tomTat}}</p>
+
+            </div>
+            <!-- Featured news -->
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-6 col-md-12">
+
+            <div *ngFor="let news of listNews">
+
+              <!-- Small news -->
+              <div class="single-news mb-4">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-md-3">
+
+                    <!--Image-->
+                    <div class="view overlay rounded z-depth-1 mb-4">
+                      <img class="img-fluid" src="{{news.hinhAnh}}" alt="Sample image">
+                      <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}">
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-9">
+
+                    <!-- Excerpt -->
+                    <p class="font-weight-bold dark-grey-text">{{news.ngayDang}} <img class="img-fluid" src="http://caytrongduoclieu.com/asset/image/hot.gif" alt="Sample image"></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="col-11 text-truncate pl-0 mb-3">
+                        <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}" class="dark-grey-text">{{news.tieuDe}}</a>
+                      </div>
+                      <a routerLink="/user/trang-khac/chi-tiet-tin-tuc/{{news.id}}"> <i class="fa fa-angle-double-right fa-1x deep-orange-text"></i></a>
+                    </div>
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+              </div>
+              <!-- Small news -->
+              <hr>
+            </div>
+
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=400&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="330" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowTransparency="true" allow="encrypted-media"></iframe>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+      </section>
+      <!-- Section: Magazine v.2 -->
+    </div>
+  </div>
+</div>

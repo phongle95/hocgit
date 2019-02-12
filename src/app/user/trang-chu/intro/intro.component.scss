@@ -1,0 +1,32 @@
+
+@media (min-width: 1199.98px) {
+
+    .text{
+        color: #A65606;
+        text-align: center;
+        font-size: 23px;
+        padding-top: 150px;
+        font-weight: 400;
+        font-family: "Helvetica", Times, serif;
+    
+    }
+    .center:hover{
+        background-color: #A65606;
+        color: white;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+
+    .text{
+        color: #A65606;
+        text-align: center;
+        font-size: 23px;
+        padding-top: 10px;
+        font-weight: 400;
+        font-family: "Helvetica", Times, serif;
+    
+    }
+}
+
